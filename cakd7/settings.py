@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -119,7 +120,13 @@ USE_TZ = False
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = '/media/'
+# _media 파일은 로컬에 테스트를 위해 저장, 버전관리는 필요없음!
+MEDIA_ROOT = os.path.join(BASE_DIR,'_media')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

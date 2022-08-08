@@ -3,7 +3,8 @@ from .models import Post
 
 class PostList(ListView):
     model = Post
-    ordering = '-pk'
+    # 가장최근 포스팅 부터 리스트
+    ordering = '-pk' 
     
 class PostDetail(DetailView):
     model = Post
