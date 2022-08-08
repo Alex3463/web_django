@@ -8,8 +8,8 @@
 - git add .
 - git commit -m 'Django project 생성'
 - git push
-- git config --global user.name 'bnv20'
-- git config --global user.password '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'
+- git config --global user.name ''
+- git config --global user.password ''
 
 ## 앱 개발
 
